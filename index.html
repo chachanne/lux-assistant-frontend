@@ -179,6 +179,7 @@
 
         function speakText(text) {
             const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'de-DE';
             window.speechSynthesis.speak(utterance);
         }
 
